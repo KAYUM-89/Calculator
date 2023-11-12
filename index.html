@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style.css">
+     </head>
+     <body>
+         <div class="cotainer">
+             <div class="calculator">
+                 <form>
+                     <div class="disply">
+                         <input type="text" name="disply">
+                     </div>
+                     <div>
+                         <input type="button" value="=" onclick="disply.value = eval(disply.value)" style="color: #33ffd8;">
+                         <input type="button" value="." onclick="disply.value += '.'" class="color" style="color: #33ffd8;">
+                         <input type="button" value="DL" class="dl " style="color: rgb(221, 15, 15);" onclick="disply.value = disply.value.toString().slice(0,-1) ">
+                     </div>
+                     <div>
+                         <input type="button" value="9" onclick="disply.value += '9'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="8" onclick="disply.value += '8'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="7" onclick="disply.value += '7'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="AC" onclick="disply.value = ' '" style="color: rgb(221, 15, 15);">
+                     </div>
+                     <div>
+                         <input type="button" value="6" onclick="disply.value += '6'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="5" onclick="disply.value += '5'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="4" onclick="disply.value += '4'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="/" onclick="disply.value += '/'" style="color: #33ffd8;">
+                     </div>
+                     <div>
+                         <input type="button" value="3" onclick="disply.value += '3'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="2" onclick="disply.value += '2'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="1" onclick="disply.value += '1'" style="color: rgba(252, 244, 197, 0.664);">
+                         <input type="button" value="-" onclick="disply.value += '-'" style="color: #33ffd8;">
+                     </div>
+                     <div>
+                        <input type="button" value="00" onclick="disply.value += '00'" style="color: rgba(252, 244, 197, 0.664);">
+                        <input type="button" value="0" onclick="disply.value += '0'" style="color: rgba(252, 244, 197, 0.664);">
+                        <input type="button" value="X" onclick="disply.value += '*'" style="color: #33ffd8;" >
+                        <input type="button" value="+" onclick="disply.value += '+'" style="color: #33ffd8;">
+                    </div>
+                 </form>
+             </div>
+         </div>
+     </body>
+</html>
